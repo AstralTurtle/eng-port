@@ -8,6 +8,7 @@ export default function JobPacketCover(){
         <Image height={640} width={800  } alt="riot games games graphic" src="/jobpacketcover.jpg"/>
         </div>
         <div className="pl-10 pr-10">
+        <h2>Prompt:</h2>
         <h2 className="text-center text-2xl">Sections:</h2>
         <ul className="list-disc underline text-sky-300 decoration-sky-300">
             <li><a href="/overview">Company Overview</a></li>

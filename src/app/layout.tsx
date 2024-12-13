@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Link from 'next/link'
 import "./globals.css";
 
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -35,6 +36,34 @@ export const metadata: Metadata = {
   description: "Portfolio for eng 21007",
 };
 
+const works: { title: string; href: string;}[] = [
+  {
+    title: "Introduction",
+    href: "/works/introduction",
+  },
+  {
+    title: "Job Packet",
+    href: "/works/job-packet",
+  },
+  {
+    title: "Rhetorical Analysis",
+    href: "/works/rhetorical-analysis",
+  },
+  {
+    title: "Research Essay / Proprosal",
+    href: "/works/research",
+  },
+  {
+    title: "Product Documentation",
+    href: "/works/docs",
+  },
+  {
+    title: "Other",
+    href: "/works/other",
+  },
+
+]
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,19 +79,37 @@ export default function RootLayout({
     <NavigationMenuItem>
       Aaron James
     </NavigationMenuItem>
-
-
     <NavigationMenuItem>
 
 
 
-    <Link href="/">
-    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+
+    <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
       Home
     </NavigationMenuLink>
-    </Link>
+
       
     </NavigationMenuItem>
+    <NavigationMenuItem>
+          <NavigationMenuTrigger>Works</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              {works.map((component) => (
+                <a href={component.href}>
+                <li
+                  // key={component.title}
+                  // title={component.title}
+                 
+                >
+                  {component.title}
+                  {/* {component.description} */}
+                </li>
+                </a>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+    
   </NavigationMenuList>
 </NavigationMenu>
 
@@ -73,3 +120,16 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+/*
+teaching c++ in the middle of writing website code lmao
+void function a(){
+  b();
+}
+
+void function b(){
+  a();
+}
+
+*/
