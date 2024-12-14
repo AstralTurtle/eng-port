@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image"
 
 export default function JobPacketCover(){
@@ -11,13 +12,13 @@ export default function JobPacketCover(){
         <h2>Prompt:</h2>
         <h2 className="text-center text-2xl">Sections:</h2>
         <ul className="list-disc underline text-sky-300 decoration-sky-300">
-            <li><a href="/overview">Company Overview</a></li>
-            <li><a href="/position-description">Position Description</a></li>
-            <li><a href="/resume">Resume</a></li>
-            <li><a href="/cover-letter">Cover Letter</a></li>
-            <li><a href="/email">Reference Request Email</a></li>
-            <li><a href="/pitch">Elevator Pitch</a></li>
-            <li><a href="/reflection">Reflection</a></li>
+            <li><a href="/works/job-packet/overview">Company Overview</a></li>
+            <li><a href="/works/job-packet/position-description">Position Description</a></li>
+            <li><a href="/works/job-packet/resume">Resume</a></li>
+            <li><a href="/works/job-packet/cover-letter">Cover Letter</a></li>
+            <li><a href="/works/job-packet/email">Reference Request Email</a></li>
+            <li><a href="/works/job-packet/pitch">Elevator Pitch</a></li>
+            <li><a href="/works/job-packet/reflection">Reflection</a></li>
         </ul>
         </div>
     

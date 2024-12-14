@@ -56,7 +56,7 @@ export default function analysis() {
                     <h3 className="font-bold">In what historical context does this document exist?</h3>
                     <p>It was written before the product was available and likely became available as the product did.</p>
                     <h3 className="font-bold">How might that impact the choices the authors made?</h3>
-                    <p>The author has to explain every feature of the product as the only expert(s) on import {  } from "module";</p>
+                    <p>The author has to explain every feature of the product as the only expert(s) on it</p>
                     <h3 className="font-bold">What sociopolitical factors might impact the choices the authors made?</h3>
                     <p>The product has an established niche already and does not need to risk alienating customers at this point.</p>
                     <h3 className="font-bold">What is the motivating occasion/issue/concern that seems to have prompted this text to have been written? (Exigence)</h3>

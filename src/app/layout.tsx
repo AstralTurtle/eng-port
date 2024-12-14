@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from 'next/link'
@@ -74,9 +75,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased pr-5 pl-5`}
       >
-        <NavigationMenu orientation="vertical">
+        <NavigationMenu orientation="vertical" className="p-2">
   <NavigationMenuList>
-    <NavigationMenuItem>
+    <NavigationMenuItem className="p-2">
       Aaron James
     </NavigationMenuItem>
     <NavigationMenuItem>
@@ -91,20 +92,20 @@ export default function RootLayout({
       
     </NavigationMenuItem>
     <NavigationMenuItem>
-          <NavigationMenuTrigger>Works</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="p-2">Works</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {works.map((component) => (
-                <a href={component.href}>
+                <NavigationMenuLink href={component.href} key={component.title}>
                 <li
-                  // key={component.title}
+                  // 
                   // title={component.title}
                  
                 >
                   {component.title}
                   {/* {component.description} */}
                 </li>
-                </a>
+                </NavigationMenuLink>
               ))}
             </ul>
           </NavigationMenuContent>
