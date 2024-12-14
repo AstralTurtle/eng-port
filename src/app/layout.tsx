@@ -1,19 +1,19 @@
 
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Link from 'next/link'
+// import Link from 'next/link'
 import "./globals.css";
 
 
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
+  // NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
+  // NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
